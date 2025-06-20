@@ -43,8 +43,12 @@ const Body = () => {
             onChange={(e) => {
               setsearchText(e.target.value);
             }}
-            onK
-          />
+
+
+          
+            />
+            console.log("gopal");
+            
           <button
             onClick={() => {
               const filteredres = Listofrestaurant.filter((res) =>
@@ -74,6 +78,7 @@ const Body = () => {
         {/* restaurent card */}
         {filteredRestaurant.map((restaurant) => (
           <RestaurentCard key={restaurant.info.id} resData={restaurant} />
+          
         ))}
       </div>
     </div>
